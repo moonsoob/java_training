@@ -3,7 +3,39 @@ package ru.stqa.pft.sandbox;
 public class MyFirstProgram {
 
     public static void main(String[] args) {
-        System.out.println("Hello,world!");
+        hello("world");
+        hello("Tamara");
+
+        double len = 5;
+        System.out.println("Площадь квадрата со стороной " + len + " равна " + areaKv(len));
+
+        double a = 3;
+        double b = 5;
+        System.out.println("Площадь прямоугольника со сторонами a=" + a + " и b=" + b + " равна " + areaPr(a, b));
+
+        double e = 10;
+        double i = 3;
+        double c = 7;
+        double d = 5;
+        System.out.println("Площадь фигуры со стороными a=" + e + ", b=" + i + ", c=" + c + ", d=" + d + " равна " + areaF(e, i, c, d));
+    }
+
+    public static void hello(String somebody) {
+        System.out.println("Hello, " + somebody + "!");
+    }
+
+
+    public static double areaKv(double a) {
+        return a * a;
+    }
+
+    public static double areaPr(double a, double b) {
+        return a * b;
+    }
+
+    public static double areaF(double a, double b, double c, double d){
+        return (a * b) + (c * d);
     }
 
 }
+
