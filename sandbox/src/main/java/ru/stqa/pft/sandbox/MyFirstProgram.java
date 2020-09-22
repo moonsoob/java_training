@@ -6,12 +6,16 @@ public class MyFirstProgram {
         hello("world");
         hello("Tamara");
 
-        double len = 5;
+        double len = 90000;
         System.out.println("Площадь квадрата со стороной " + len + " равна " + areaKv(len));
 
         double a = 3;
         double b = 5;
         System.out.println("Площадь прямоугольника со сторонами a=" + a + " и b=" + b + " равна " + areaPr(a, b));
+
+        double X = 3;
+        double Y = 5;
+        System.out.println("Проверка вычисления X=" + a + " и Y=" + b + " равна " + areaPr(Y, X));
 
         double e = 10;
         double i = 3;
@@ -26,11 +30,11 @@ public class MyFirstProgram {
 
 
     public static double areaKv(double a) {
-        return a * a;
+        return (a * 0.2)/(1.2);
     }
 
     public static double areaPr(double a, double b) {
-        return a * b;
+        return a - b;
     }
 
     public static double areaF(double a, double b, double c, double d){
