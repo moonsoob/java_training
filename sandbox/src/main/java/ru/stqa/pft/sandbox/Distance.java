@@ -4,8 +4,8 @@ public class Distance {
 
     public static void main(String[] args) {
 
-        Point p1 = new Point(5, 6);
-        Point p2 = new Point(3, 3);
+        Point p1 = new Point(9, 6);
+        Point p2 = new Point(8, 4);
         System.out.println("Расстояния между двумя точками = " + distance(p1, p2));
     }
 
